@@ -1,0 +1,12 @@
+# 仓库内文本统一 LF：项目现为 CRLF，Linux 贡献者的 PR 会产生整文件空白差异
+* text=auto eol=lf
+
+# 二进制资源不能被换行符转换破坏
+*.ico binary
+*.png binary
+*.jpg binary
+*.onnx binary
+
+# Windows 批处理由 cmd.exe 按 ANSI 读取，保持 CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf

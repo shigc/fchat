@@ -1,0 +1,8 @@
+# 可选依赖：图片「识别文字」（离线 OCR）。
+#
+#     pip install -r requirements-ocr.txt
+#
+# 不装也能用：右键「识别文字」会给出补装提示，其余功能不受影响。
+# 单独成文件的原因：rapidocr-onnxruntime 声明 requires_python <3.13，
+# 混在 requirements.txt 里会让 Python 3.13+ 用户整套装不起来。
+rapidocr-onnxruntime==1.4.4

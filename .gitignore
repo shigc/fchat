@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Config / secrets
+config.ini
+*.local
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Worktrees
+.worktrees/
+
+# 构建与更新配置中的密钥（不提交）
+.env
+# 历史遗留的本地配置文件名：现行实现已不再读写这两项，
+# 保留规则只是防止旧分支/旧脚本产物被误提交
+auth.yaml
+update.yaml
+*.pyd
+_auth_cfg*
+_update_cfg*
+
+# 内部开发文档
+AGENTS.md
+docs/superpowers/
+
+# 截图/产物
+vibe_images/

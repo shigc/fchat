@@ -1,0 +1,259 @@
+/* ============================================================
+   微信风格全局样式
+   ============================================================ */
+
+* {
+    font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+    font-size: 13px;
+    outline: none;
+}
+
+/* ---------- 主窗口 ---------- */
+#MainWindow {
+    background: #f7f7f7;
+}
+
+QMainWindow::separator {
+    background: #e7e7e7;
+    width: 1px;
+    height: 1px;
+}
+
+/* ---------- 左侧图标导航栏 ---------- */
+#Sidebar {
+    background: #2e2e2e;
+}
+
+#SidebarButton {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+#SidebarButton:hover {
+    background: #3a3a3a;
+}
+
+#SidebarButton:checked {
+    background: #07c160;
+    color: #ffffff;
+    border-left: 3px solid #07c160;
+}
+
+/* ---------- 会话列表 ---------- */
+#ConversationList {
+    background: #ffffff;
+    border: none;
+}
+
+#ConversationList::item {
+    /* 会话项用自定义 widget 绘制，这里仅去掉内边距 */
+    border: none;
+}
+
+#ConversationList::item:selected,
+#ConversationList::item:hover {
+    background: #eef3f4;
+}
+
+#ConversationTitle {
+    background: #ededed;
+    color: #191919;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 12px;
+}
+
+/* ---------- 聊天区 ---------- */
+#ChatArea {
+    background: #f5f5f5;
+}
+
+#ChatTitle {
+    background: #f5f5f5;
+    color: #191919;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 16px;
+}
+
+/* 消息流滚动区 */
+#ChatScrollArea {
+    background: #f5f5f5;
+    border: none;
+}
+
+/* 输入区 */
+#ChatInputWidget {
+    background: #f5f5f5;
+    border-top: 1px solid #e7e7e7;
+}
+
+#MessageInput {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px 10px;
+    selection-background-color: #07c160;
+    selection-color: #ffffff;
+}
+
+#MessageInput:focus {
+    border-color: #07c160;
+}
+
+#SendButton {
+    background: #07c160;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 20px;
+    font-size: 13px;
+}
+
+#SendButton:hover {
+    background: #06ad56;
+}
+
+#SendButton:pressed {
+    background: #059a4c;
+}
+
+#SendButton:disabled {
+    background: #b5e6c9;
+    color: #eafff3;
+}
+
+#ToolButton {
+    background: transparent;
+    border: none;
+    color: #576b95;
+    font-size: 13px;
+}
+
+#ToolButton:hover {
+    color: #07c160;
+}
+
+/* ---------- 聊天气泡（由代码控制颜色，这里给基础布局）---------- */
+#BubbleOuter {
+    background: transparent;
+}
+
+#BubbleMine {
+    background: #95ec69;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 8px;
+    padding: 5px 9px;
+}
+
+#BubbleOther {
+    background: #ffffff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 4px;
+    padding: 5px 9px;
+}
+
+#BubbleSystem {
+    background: #f5f5f5;
+    color: #999999;
+    font-size: 12px;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* 消息发送者名称（群聊时显示） */
+#MsgSenderName {
+    color: #576b95;
+    font-size: 12px;
+}
+
+/* 时间标签 */
+#TimeLabel {
+    color: #b2b2b2;
+    font-size: 11px;
+}
+
+/* ---------- 头像 ---------- */
+#AvatarLabel {
+    background: #ddd;
+}
+
+/* ---------- 登录对话框 ---------- */
+#LoginDialog {
+    background: #ffffff;
+}
+
+#LoginTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #191919;
+}
+
+#LoginSubtitle {
+    color: #999999;
+    font-size: 13px;
+}
+
+#LoginInput {
+    background: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+#LoginInput:focus {
+    border-color: #07c160;
+    background: #ffffff;
+}
+
+#LoginButton {
+    background: #07c160;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px;
+}
+
+#LoginButton:hover {
+    background: #06ad56;
+}
+
+#LoginButton:disabled {
+    background: #b5e6c9;
+}
+
+#LoginError {
+    color: #fa5151;
+    font-size: 12px;
+}
+
+#LoginHint {
+    color: #999999;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/* 自定义复选框 */
+QCheckBox {
+    spacing: 5px;
+    color: #888888;
+    font-size: 12px;
+}
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+

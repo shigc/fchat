@@ -1,0 +1,16 @@
+PyQt5==5.15.11
+requests==2.33.1
+websocket-client==1.9.0
+rocketchat-API==3.7.1
+PyYAML==6.0.2
+cryptography==44.0.1
+# 密钥托管（系统凭据存储：Windows 凭据管理器 / macOS Keychain / Linux Secret Service）
+keyring==25.7.0
+pywin32-ctypes==0.2.3
+jaraco.classes==3.4.0
+jaraco.functools==4.1.0
+jaraco.context==6.0.0
+emoji==2.14.1
+python-dotenv==1.0.1
+# 离线图片文字识别（可选）：拆到 requirements-ocr.txt，因为它把 Python
+# 卡在 <3.13，不该拖累主依赖安装。见 README「安装」。
